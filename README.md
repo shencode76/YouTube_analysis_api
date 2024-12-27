@@ -1,7 +1,9 @@
 # 2024-dsan-5000-project
 
 # Project: Unveiling the Secrets of Audience Engagement
-#### Team Member: Yuxi Shen, Xun Lei
+
+This is a semester-long data science group project for my Data Science and Analytics class at Georgetown University when persuing Master degree.
+Please find more details at [my website](https://yuxishen.georgetown.domains/portfolio_project/)
 
 ## Overview
 This project focuses on the collection, preprocessing, and analysis of YouTube video data to extract meaningful insights. By utilizing the YouTube Data API, we systematically gather video metadata and analyze trends in content performance, audience engagement, and popularity. The project is structured to address key research questions using both supervised and unsupervised learning techniques.
