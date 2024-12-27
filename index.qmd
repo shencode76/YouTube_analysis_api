@@ -1,0 +1,173 @@
+---
+title: "Unveiling the Secrets of Audience Engagement: Decoding the Factors Behind YouTube Video Success"
+format: 
+  html:
+    allow-html: true
+---
+## Landing Page
+### **About Me/Us**
+#### Member -- *Yuxi Shen*
+**Yuxi Shen** is a current Master Student in Data Science and Analytics program at Georgetown University. She received her Bachelor's degree in Northeastern University at Boston, MA majored in Data Science and Psychology in May 2024. She wants to deepen her expertise in machine learning and NLP and gain more hands-on programming experience through this Master program. Her particular interests lie in the applications of Data Science and Data Analytics within the finance and healthcare sectors, including mental health. In her opinion, data can significantly influence decision-making and improve outcomes for individuals and organizations. 
+
+**Contact Info: ys1079@georgetown.edu**
+
+**Academic Interests**
+
+- Data Analytics in the sectors of Finance and Healthcare
+- Machine Learning Algorithms
+- Natural Language Processing Models
+
+**Education**
+
+- 2024 - Expected 2026: Master of Science in Data Science and Analytics at Georgetown University
+- 2019 - 2024: Bachelor of Science in Data Science and Psychology at Northeastern University
+
+#### Member -- *Xun Lei*
+Hello, my name is Xun Lei. I am an international student from China, currently a graduate student in Data Science and Analytics at Georgetown University. I studied at the University of California, Santa Cruz, for my undergraduate degree. This is my first time here in Washington, DC. If you have any good restaurants or places to recommend in DC, feel free to share them with me!
+
+**Contact Info: xl769@georgetown.edu**
+
+**Academic Interests**
+
+- Big data Analytics
+- Machine learning
+- Deep learning
+- Software design
+  
+**Education**
+
+- 2024 - Expected 2026: Master of Science in Data Science and Analytics at Georgetown University
+- 2020 - 2024:  Bachelor of Science in Information Management and Technology at University of California, Santa Cruz
+
+
+
+### Summary
+
+This project explores the dynamics of YouTube video popularity by analyzing metrics such as views, likes, comments, engagement rates, and video duration with data gathered from YouTube API. Understanding what drives a video’s success is significant for content creators and marketers aiming to optimize their strategies for audience engagement and also for decision makers to understand the direction of public opinions. Building on prior work in video analytics and social media data mining, this study investigates patterns and trends within YouTube data to uncover factors contributing to video virality.
+
+We outline the key research questions driving this project:
+
+1. What are the distinct types of YouTube videos based on their content (e.g., topics) or engagement metrics?
+How effectively can videos be clustered using their features, and what do these clusters represent in terms of audience behavior or content patterns?
+2. What role does video duration play in engagement and overall success? Specifically, do audiences show a preference for certain topics depending on whether the videos are long or short? 
+3. What key metrics should video creators prioritize when assessing their performance, and how can platforms like YouTube improve their tools to better evaluate the success of channels and content creators?
+4. What characteristics should advertisers prioritize working with creators to ensure the best results from their ads?
+5. Is it possible to predict the popularity trends of specific video categories to help creators gain a competitive edge?
+6. Which features have the strongest impact on video popularity, and how can we interpret their influence to guide content creation strategies?
+
+### Populate Video
+
+**Video Information**:
+
+- Like Count: 8.1 million likes
+- View Count: 6 million views
+- Comment Count: 8489 comments
+- Duration: 15 seconds
+
+This video shows an exceptionally high like-to-view ratio, as the number of likes (8.1 million) surpasses the total views (6 million). This unusual engagement suggests that the video strongly resonated with viewers, potentially due to its short duration (15 seconds), which aligns well with audience preferences for quick, entertaining content. The short format increases the likelihood of replays, boosting engagement metrics like likes and comments. Additionally, the relatively high comment count (8,489) indicates that the video encouraged viewer interaction, further contributing to its success.
+
+
+
+<a href="https://www.youtube.com/watch?v=pS-fFdvyHLE" target="_blank">
+    <img src="https://img.youtube.com/vi/pS-fFdvyHLE/0.jpg" alt="YouTube Video" width="600px" style="border-radius: 10px; border: 2px solid #ddd;">
+</a>
+
+
+
+### Key words
+Social Media Data Analysis, YouTube API, Information Retrieval, Supervised Learning, Unsupervised Learning, Video Recommendations, Machine Learning Algorithm, Video Content Analysis, Attention Mechanisms, Viewer Engagement, YouTuber Personality, Multimodal Analysis, Audience Attraction, Social Networks
+
+### Literature review
+In the Literature review section, we found research papers to enrich our vision in the video analysis and social media analysis area:
+
+- Fazeli et al. @fazeli2023visual_verbal introduce the Visual-Verbal Video Analysis (VVVA) method, a systematic six-step approach combining Multimodal and Visual Grounded Theory. This framework categorizes visual, verbal, and textual elements, offering a comprehensive methodology for video data analysis in social sciences and medicine. While our focus is on video statistics and text attributes, this study inspires us to integrate multi-format data into future projects.
+
+- Zhou et al. @8170284 investigate video recommendation mechanisms on platforms like YouTube and Tencent, highlighting Direct and Word-of-Mouth (WOM) recommendations. By analyzing historical view count traces using epidemic models, they estimate the user reach of these mechanisms. This study provides insights for optimizing recommendation strategies, relevant for creators seeking to enhance visibility.
+
+- Sedmak and Svetina @sedmak2024components reveal that adolescents’ attraction to YouTubers is driven by "identification," shaped by YouTubers’ personal traits, their relationships with followers, and the medium’s accessibility. The findings emphasize that relatability and mutual recognition are key to audience connection. These insights could inform strategies to better understand audience attention dynamics.
+
+- A study @sedmak2024components_a highlights how YouTubers’ self-disclosure, relatability, and charisma foster pseudo-social interactions, akin to parasocial relationships. These bonds influence prolonged engagement, brand attitudes, and purchasing behavior. This research encourages integrating YouTuber traits into our analysis to better understand how personal factors drive engagement.
+
+- Yang et al. @yang2022science explore how video length, production quality, presenter attributes, and audience demographics impact engagement with science content on YouTube. The study emphasizes balancing accessibility with informative content to retain viewers. These findings inspire us to consider video design elements and audience behavior in future analyses.
+
+- Zhang et al. @zhang2022behind focus on contextual factors, such as environment and social dynamics, that shape audience engagement with vloggers. Authentic and relatable contexts are pivotal in fostering audience connection. This study highlights the potential of expanding our research to include situational and behavioral data to better understand engagement dynamics.
+
+### Use Cases/Examples
+
+**Case Study 1: Analyzing Video Engagement Patterns Across Content Categories**
+
+By leveraging data collected from the YouTube API, we examined engagement metrics (views, likes, comments, etc.) across various video categories, such as entertainment, education, and fitness. For example:
+
+- **Key Insight:** Entertainment videos often have high engagement rates in terms of likes and comments, despite shorter view durations, indicating that audiences actively interact with content they find valuable and concise. Additionally, we found that entertainment videos frequently overlap with short film cuts, suggesting that people living in modern, fast-paced lives have developed new ways to consume movies as entertainment.
+
+- **Impact:** These findings can help educational YouTubers optimize their content for higher audience interaction while maintaining brevity.
+
+**Case Study 2: Exploring Clusters of Similar Videos**
+
+Through unsupervised maching learning clustering models, we grouped videos based on engagement metrics and textual data from titles and descriptions. For instance:
+
+- **Clusters Found:**
+  - **Cluster 1:** High-engagement, short videos in trending topics.
+  - **Cluster 2:** Long, in-depth videos with steady views over time.
+
+- **Impact:** Clustering revealed distinct audience preferences and engagement patterns, helping content creators and marketers identify strategies for targeted video creation.
+
+**Case Study 3: Investigating the Role of Video Duration in Engagement**
+
+We analyzed whether video duration correlates with audience engagement across different content types.
+
+- **Key Insight:** Video duration shows a strong correlation with video popularity, as demonstrated by the plots generated during the Exploratory Data Analysis phase. Less popular videos (with fewer than 6,000,000 views) have a wide range of video lengths, whereas popular videos (with more than 6,000,000 views) are concentrated around shorter durations.
+
+- **Impact:** These insights inform creators about the optimal video length based on their target audience and content category.
+
+**Case Study 4: Predicting Popularity with Supervised Learning**
+
+Using machine learning classification techniques, we developed a model to predict video popularity based on features such as like count, video duration, video definition and topic categories.
+
+
+- **Key Insight**: The model demonstrated high accuracy in predicting videos with low view counts, indicating its reliability in identifying less popular content, while also providing valuable predictions for high view count videos. 
+
+
+- **Impact**: The model's ability to accurately identify low-popularity videos and potential breakout content enables content creators and platforms to optimize resource allocation, refine recommendations, and tailor strategies to enhance engagement and audience reach.
+
+### Call to Action
+We aim to uncover insights behind YouTube video engagement and audience behavior by creating visualizations and outlining case studies. We are eager to explore how video metrics and machine learning are reshaping content strategies. Follow the progress of this project on [GitHub](https://github.com/dsan-5000/project-YuxiShen1079). Contributions are welcome! If you'd like to suggest improvements, report issues, or contribute to the project, feel free to submit a pull request or open an issue.
+
+### Setup and Run
+#### Clone the Repository:
+```bash
+git clone https://github.com/dsan-5000/project-YuxiShen1079.git
+cd <root-of-this-project > 
+```
+
+To run the project and navigate between sections, use:
+```bash
+quarto preview _site
+```
+
+#### Visit our website hosing on GU Domains
+
+[Xun_Lei_portfolio_project](https://xunlei.georgetown.domains/portfolio_project/)
+
+[Yuxi_Shen_portfolio_project](https://yuxishen.georgetown.domains/portfolio_project/)
+
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. 
+
+Clone and set up the repository with
+
+```bash
+git clone https://github.com/dsan-5000/project-YuxiShen1079.git
+cd <root-of-this-project > 
+pip install -e 
+```
+  
+## License
+
+This project was created by Yuxi Shen and Xun Lei. Please contact us directly through emails.
+
+## Credits
+
+The structure of this project was provided by the DSAN 5000 course at Georgetown University, and the deployment was implemented using Quarto.

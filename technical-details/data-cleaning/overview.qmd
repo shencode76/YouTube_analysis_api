@@ -1,0 +1,21 @@
+# Overview
+
+This section provides a high-level summary for technical staff, outlining the key tasks and processes undertaken in this project. It establishes the context, motivation, and objectives of the work.
+
+- **Goals**:  
+This document focuses on cleaning and preparing a dataset generated from YouTube API data, ensuring it is accurate, consistent, and suitable for analysis. It includes handling missing values, resolving inconsistencies, and transforming raw features for effective use in supervised-learning and unsupervised-learning tasks.
+
+- **Motivation**:  
+The primary motivation behind this project is to leverage data collected from the YouTube API to better understand and predict video performance, popularity, and trends. By analyzing and refining the dataset, the goal is to develop reliable models for regression and classification tasks, providing actionable insights into what drives video success on the platform. This effort aims to bridge the gap between raw data and meaningful predictions
+
+- **Objectives**:  
+
+  - Handle Missing and Erroneous Data
+  - Remove punctuation and unnecessary symbols from text fields
+  - Extract meaningful topics from the topicCategories field for better analysis
+  - Convert duration into seconds for numerical consistency
+  - Normalize numerical fields 
+  - Classify videos into multi-class (low, medium, high)and binary (low, high) popularity categories based on viewCount
+  - Remove duplicate entries
+  - Save Processed Data
+

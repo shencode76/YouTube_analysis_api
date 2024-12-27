@@ -1,0 +1,24 @@
+# Methods
+
+This section provides an overview of the methods used in this project, including key techniques, tools, and processes for data collection, processing, and analysis. Below, we outline the approach taken to achieve the project's objectives.
+
+### **YouTube Data API Integration**
+We used the `build` function from the YouTube Data API to gather video metadata using a unique API key. This served as the foundation for querying and collecting data directly from YouTube. We included out API key in the comment, but please replace with your own API key over there. 
+
+### **Custom Functions for Data Collection**
+1. **`retrieve_randomized_videos`:**  
+   - This function was designed to randomly select videos from English-speaking countries, such as the United States (`US`), the United Kingdom (`GB`), and Australia (`AU`).  
+   - A predefined list of video categories/topics was used to randomly choose specific types of videos to include.  
+   - To focus on factors driving high view counts, the `chart` parameter in the `youtube.videos().list()` function was set to `"mostPopular"`.  
+   - The function returns videos that match the specified conditions, including metadata such as content details, statistics, and snippets.
+
+2. **`retrieve_200_videos`:**  
+   - This function builds on `retrieve_randomized_videos` to retrieve up to 200 videos in total.  
+   - If the data retrieved contains a `nextPageToken`, the function iteratively retrieves additional videos until the limit is reached or no further pages are available.
+
+3. **`get_video_details`:**  
+   - This function processes the JSON data returned by the YouTube API to extract key statistics and metadata.  
+   - Examples of extracted data include `channelTitle` (from the snippet section) and `viewCount` (from the statistics section).  
+
+### **Data Summary**
+At the end of this data collection workflow, we compiled a dataset containing 13,598 rows and 15 columns, and it contains string data, numerical data, Boolean values and dates, but we won't use the dates columns for furthere analysis. This raw dataset (saved in `data/raw-data`) is now ready for further preprocessing and analysis in the data cleaning stage.

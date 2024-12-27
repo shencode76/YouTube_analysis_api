@@ -1,0 +1,37 @@
+# Summary
+ 
+### We finished data collection on 11/25/2024
+
+we finally gatered youtube video data set with 13,598 rows and 15 columns in 'video_id', 'channelTitle', 'title', 'tags', 'publishedAt', 'viewCount', 'likeCount', 'dislikeCount', 'favoriteCount', 'commentCount', 'duration', 'definition', 'caption', 'topicCategories', 'popularity'. We saved the dataset into csv file for future usage. In which, the dataset has regression target such as 'viewCount', 'likeCount'; binary classification target such as 'definition', 'caption','popularity', and multiclass-classification target such as 'topicCategories'.
+
+## **Challenges**
+During the data collection phase, several technical challenges were encountered. These included:
+
+- **API Limitations:** The YouTube Data API's rate limits required careful management of requests to ensure the collection process was both efficient and thorough, or we will receive HTTP error. Therefore, we include try except clasuses and ask the functions to sleep for seconds, and this step ensures the pipeline of retrieving data from API would not break in the middle. 
+
+- **Data Diversity:** Although we attempting to create a diverse dataset, balancing content across regions, categories, and popularity levels posed a challenge. Random sampling sometimes led to imbalanced subsets that required additional filtering and adjustments.
+
+- **Incomplete Metadata:** Some videos lacked complete metadata fields, such as view counts or engagement statistics, leading to gaps in the dataset. These cases required exclusion or imputation strategies.
+
+- **Future Enhancement**: As regression target, binary classification target, multiclass-classification target are required to be included, we will tune and classify the raw data in the data cleaning section to ensure the target labels exist. 
+
+## **Benchmarks**
+
+When comparing the collected dataset to industry benchmarks and intuitive expectations: 
+
+- The collected dataset is representative of English-speaking regions, enabling targeted analysis while adhering to linguistic and cultural consistency.
+  
+- The features included in the dataset are generally being mentioned in social media analysis papers @fiveable_social_media_analysis. 
+
+## **Conclusion and Future Steps**
+The data collection phase successfully generated a dataset of 13,598 rows and 15 columns, encapsulating a wide range of video metadata, including content details, engagement metrics, and categories. This dataset serves as a strong foundation for subsequent cleaning, processing, and analysis phases.
+
+To improve this process further:
+
+- **API Optimization:** Employ parallel requests or caching mechanisms to handle rate limits more efficiently and speed up the collection process.
+
+- **Data Enrichment:** Enrich the dataset with additional features, such as user demographics or sentiment analysis of comments, for richer insights.  
+
+- **Scalability:** Expand data collection to include non-English-speaking regions or underrepresented video categories to support more generalized findings.
+
+Future work should focus on utilizing this dataset to uncover trends in viewer engagement, analyze YouTube’s recommendation system, and provide actionable insights for content creators and marketers. These next steps will not only refine the dataset further but also help address the challenges and insights discovered during this phase.

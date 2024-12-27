@@ -1,0 +1,19 @@
+# Overview
+
+This section provides a high-level summary for technical staff, outlining the key tasks and processes undertaken in this project. It establishes the context, motivation, and objectives of the work.
+
+- **Goals**:  
+The primary goal of this document is to efficiently collect data from the YouTube API to build a robust dataset for addressing future data science research questions. This involves designing a reliable workflow for data acquisition, using [Youtube Data API-v3](https://developers.google.com/youtube/v3) calls to gather video metadata, and curating a dataset of sufficient size and quality.
+
+- **Motivation**:  
+The motivation behind this data collection effort is to source original and reliable data directly from the YouTube API. To ensure the dataset is representative and meaningful, we aim to diversify the collected data by selecting subsets of videos from different countries while limiting topics to reduce noise and ambiguity. This approach allows us to create a focused, high-quality dataset that reflects diverse content while maintaining relevance to our research goals.
+
+- **Objectives**:  
+The specific objectives for data collection are as follows:  
+
+  - Randomly retrieve video metadata using the YouTube Data API.  
+  - Select useful video features, such as viewing statistics, to ensure the data supports comprehensive analysis.  
+  - Investigate YouTube's recommendation mechanism by retrieving the linked "next page" videos associated with each video.  
+  - Focus on videos from English-speaking countries (e.g., the United States and the United Kingdom) to maintain consistency in language and cultural context.  
+
+This overview provides technical staff with the necessary context to understand the importance of the work and guides them in exploring the details presented in subsequent sections.

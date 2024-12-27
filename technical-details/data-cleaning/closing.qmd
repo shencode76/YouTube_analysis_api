@@ -1,0 +1,32 @@
+# Summary
+
+we finally gatered youtube video data set with 2,202 rows and 16 columns in 'video_id', 'channelTitle', 'title', 'tags', 'publishedAt', 'viewCount', 'likeCount', 'dislikeCount', 'favoriteCount', 'commentCount', 'duration', 'definition', 'caption', 'topicCategories', 'popularity', 'popularity_multi_class'. 
+
+We saved the dataset into csv file for future usage. In which, the dataset has regression target such as 'viewCount', 'likeCount'; binary classification target such as 'definition', 'caption','popularity', and multiclass-classification target such as 'topicCategories' and 'popularity_multi_class'.
+
+## **Challenges**
+During the data cleaning phase, several technical challenges were encountered. These included:
+
+- **Handling Missing or Inconsistent Values** 
+Missing or inconsistent data in key fields, such as tags, topicCategories, and likeCount, required careful imputation or replacement with placeholders to maintain dataset integrity.
+
+- **Detecting and Removing Non-English Text:** 
+Non-English text in fields like title posed a challenge, as it could lead to inconsistencies in analysis. A language detection algorithm was applied to retain only English text, ensuring language uniformity.
+
+- **Standardizing Text Fields** 
+Text fields such as title and tags contained punctuation, special characters, and redundant information. These were systematically removed to create clean, standardized text data for better analysis and modeling.
+
+- **Extracting Structured Information from Unstructured Fields**
+  
+1. Duration Conversion: Video durations in ISO 8601 format (e.g., PT1H2M30S) were converted into numerical seconds for consistency and usability.
+2. Topic Parsing: Topics in the topicCategories field were extracted from complex URLs to isolate meaningful labels.
+
+- **Normalizing Large Numerical Fields** 
+Fields like viewCount and likeCount contained large numerical values that required normalization for compatibility with machine learning algorithms.
+
+## **Future Steps**
+
+- Addressing Class Imbalance: Use resampling methods or advanced techniques to balance classification tasks.
+- Advanced Analysis: Explore machine learning models to predict video performance and popularity.
+
+Future work should focus on utilizing this dataset to uncover trends in viewer engagement, analyze YouTube’s recommendation system, and provide actionable insights for content creators and marketers. These next steps will use the cleaned data to build models to forecast video performance, helping creators estimate potential engagement

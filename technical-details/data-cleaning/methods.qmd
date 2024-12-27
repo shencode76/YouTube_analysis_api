@@ -1,0 +1,42 @@
+# Methods
+
+This section provides an overview of the methods used in this project, including key techniques, tools, and processes for data cleaning, Below, we outline the approach taken to achieve the project's objectives.
+
+- **Handle Missing and Erroneous Data**
+1. Missing values (`NaN`) in the dataset were replaced with the string `"nan"` to maintain data integrity and ensure compatibility with text-processing functions.  
+2. Error-prone fields were systematically validated and transformed using custom cleaning functions, including language detection, punctuation removal, topic extraction, duration conversion, numerical normalization, popularity classification, and deduplication,
+
+- **Remove punctuation and unnecessary symbols from text fields**
+1. A regular expression-based function was applied to remove punctuation and irrelevant symbols from text fields such as `title` and `tags`.  
+2. Stopwords were filtered out from text-heavy columns to retain only meaningful terms.  
+
+- **Extract meaningful topics from the topicCategories field for better analysis**
+1. Topics were extracted from URLs in the `topicCategories` field using regular expressions, isolating only the relevant text.  
+2. Non-informative or missing topics were replaced with `"nan"`.
+
+- **Convert duration into seconds for numerical consistency**
+1. The ISO-8601 formatted `duration` field was parsed using a regex-based function to extract hours, minutes, and seconds.  
+2. The durations were converted into a single numerical field (total seconds) for standardization.  
+
+- **Normalize numerical fields **
+1. Numerical columns, including `viewCount`,`likeCount` and `commentCount`, were normalized to a range of 0 to 1 using Min-Max scaling.  
+
+- **Classify videos into multi-class (low, medium, high)and binary (low, high) popularity categories based on viewCount**
+- **Multi-Class Popularity**:  
+    - `low`: < 1 million views.  
+    - `medium`: 1–6 million views.  
+    - `high`: ≥ 6 million views.  
+- **Binary Popularity**:  
+    - `low`: < 6 million views.  
+    - `high`: ≥ 6 million views.  
+
+- **Remove duplicate entries**
+Duplicate entries were identified and removed using the unique video identifier (`video_id`)
+
+- **Save Processed Data**
+
+The cleaned and processed dataset was saved in `.csv` format in the `data/processed-data` folder
+
+- **Data Summary**
+
+At the end of this data cleaning workflow, we compiled a refined dataset comprising 2,202 rows and 16 columns, containing a mix of string data, numerical values, Boolean indicators, and dates, all prepared for subsequent analysis

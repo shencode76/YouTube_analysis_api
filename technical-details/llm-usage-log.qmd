@@ -1,0 +1,24 @@
+---
+title: "LLM usage log"
+---
+
+This page can serve as a "catch-all" for LLM use cases that don’t involve content creation, such as reformatting your own ideas, commenting code that you wrote, or proofreading text, PDF summarization.
+
+LLM tools were used in the following way for the tasks below
+
+## Brainstorming
+
+* To create the initial idea, LLM tools @gpt4o were used to brainstorm ideas and provide feedback and refine the project plan.
+
+## Writing: 
+
+* Reformating text from bulleted lists into process: 
+  * We asked ChatGPT @gpt4o to format our process log
+* Proofreading
+* Grammar mistake fixation in Literature Review
+* Reference formatting to Bibtext
+
+## Code: 
+
+* Code commenting and explanatory documentation 
+* doc string summarization for some of the functions. 

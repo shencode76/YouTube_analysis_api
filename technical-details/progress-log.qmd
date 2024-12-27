@@ -1,0 +1,78 @@
+---
+title: "Progress log"
+---
+
+Use this page to track your progress and keep a log of your contributions to the project, please update this each time you work on your project, it is generally a good habit to adopt.
+
+If you are working as a team, at the end, you can duplicate the project and add it to your individual portfolio websites. If you do, you **MUST** retain attribution to your teammates. Removing attribution would constitute plagiarism.
+
+## To-do
+
+* [x] Explore possible topics by brainstorming with GPT 
+* [x] Identify the purpose of the analysis
+* [x] Literative review: 3 paper per member
+* [x] Connect with Youtube API, collect data
+* [x] Explore dataset and clean unformmated data
+* [x] Remove duplicated data 
+* [x] Analyze trends in views, likes, and comments 
+* [x] EDA: Visualize data distributions (e.g., bar charts, heatmaps).
+* [x] Modeling: unsupervised learning (clustering)
+* [x] Modeling: supervised learning (Random Forest)
+* [x] Website Development
+* [x] Integrate front end with back end 
+* [x] Deploy Analysis on GU domains
+* [x] write a technical methods sections for supervised learning models
+* [x] write a technical methods sections for unsupervised learning models
+* [x] Test website responsiveness and functionality.
+* [x] Write a README or user guide for the project.
+* [x] Final report
+
+
+## Yuxi Shen:
+
+Provide their name, a link to their "About Me" page.
+
+Also, describe a log of their project roles.
+
+* [x] Attend first group meeting
+* [x] Understand Data Source 
+* [x] Was assigned research paper topics to explore: video analysis, psychology behind video attraction. 
+* [x] Collect Data
+* [x] EDA
+* [x] Unsupervised learning Model training
+* [x] Report generation - Executive Summary 
+* [x] Report generation - Objective
+* [x] Report generation - Key Insights
+* [x] Report generation - Visualizations
+* [x] Report generation - Business Implications
+* [x] Report generation - Recommendations
+* [x] Report generation - Conclusion
+* [x] Landing page
+* [x] connect with GU domain website
+* [x] Final report
+
+
+## Xun Lei
+
+Provide their name, a link to their "About Me" page.
+
+Also, describe a log of their project roles.
+
+
+* [x] Attend first group meeting
+* [x] Understand Data Source 
+* [x] Clean data
+* [x] EDA
+* [x] Build Supervised learning model, train models 
+* [x] Generate technical report
+* [x] Report generation - Executive Summary 
+* [x] Report generation - Objective
+* [x] Report generation - Key Insights
+* [x] Report generation - Visualizations
+* [x] Report generation - Business Implications
+* [x] Report generation - Recommendations
+* [x] Report generation - Conclusion
+* [x] connect with GU domain website
+* [x] Landing page
+* [x] Final report
+
