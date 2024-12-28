@@ -5,11 +5,13 @@ format:
     allow-html: true
 ---
 ## Landing Page
-### **About Me/Us**
-#### Member -- *Yuxi Shen*
-**Yuxi Shen** is a current Master Student in Data Science and Analytics program at Georgetown University. She received her Bachelor's degree in Northeastern University at Boston, MA majored in Data Science and Psychology in May 2024. She wants to deepen her expertise in machine learning and NLP and gain more hands-on programming experience through this Master program. Her particular interests lie in the applications of Data Science and Data Analytics within the finance and healthcare sectors, including mental health. In her opinion, data can significantly influence decision-making and improve outcomes for individuals and organizations. 
+### **About Me**
+#### Member1 -- *Yuxi Shen*
+**Yuxi Shen** is a current Master Student in Data Science and Analytics program at Georgetown University. She received her Bachelor's degree in Northeastern University at Boston, MA majored in Data Science and Psychology in May 2024. She wants to deepen her expertise in machine learning and NLP and gain more hands-on programming experience through this Master program. Her particular interests lie in the applications of Data Science and Data Analytics within the finance and healthcare sectors, including mental health. In her opinion, data can significantly influence decision-making and improve outcomes for individuals and organizations. This project is a group project for my DSAN 5000 Data Science and Analytics course at Georgetown University.
 
 **Contact Info: ys1079@georgetown.edu**
+
+**Connect with me on [LinkedIn](https://www.linkedin.com/in/yuxi-shen-gu/)**
 
 **Academic Interests**
 
@@ -21,24 +23,6 @@ format:
 
 - 2024 - Expected 2026: Master of Science in Data Science and Analytics at Georgetown University
 - 2019 - 2024: Bachelor of Science in Data Science and Psychology at Northeastern University
-
-#### Member -- *Xun Lei*
-Hello, my name is Xun Lei. I am an international student from China, currently a graduate student in Data Science and Analytics at Georgetown University. I studied at the University of California, Santa Cruz, for my undergraduate degree. This is my first time here in Washington, DC. If you have any good restaurants or places to recommend in DC, feel free to share them with me!
-
-**Contact Info: xl769@georgetown.edu**
-
-**Academic Interests**
-
-- Big data Analytics
-- Machine learning
-- Deep learning
-- Software design
-  
-**Education**
-
-- 2024 - Expected 2026: Master of Science in Data Science and Analytics at Georgetown University
-- 2020 - 2024:  Bachelor of Science in Information Management and Technology at University of California, Santa Cruz
-
 
 
 ### Summary
