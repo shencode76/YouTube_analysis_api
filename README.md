@@ -31,7 +31,7 @@ This project focuses on the collection, preprocessing, and analysis of YouTube v
 ## How to run our project
 #### Clone the Repository:
 ```bash
-git clone https://github.com/dsan-5000/project-YuxiShen1079.git
+git clone https://github.com/shencode76/YouTube_analysis_api.git
 cd <root-of-this-project > 
 # and then you can run each of the Jupyter Notebook in for each section
 ```
