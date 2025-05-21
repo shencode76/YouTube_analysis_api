@@ -6,7 +6,6 @@ format:
 ---
 ## Landing Page
 ### **About Me**
-#### Member1 -- *Yuxi Shen*
 **Yuxi Shen** is a current Master Student in Data Science and Analytics program at Georgetown University. She received her Bachelor's degree in Northeastern University at Boston, MA majored in Data Science and Psychology in May 2024. She wants to deepen her expertise in machine learning and NLP and gain more hands-on programming experience through this Master program. Her particular interests lie in the applications of Data Science and Data Analytics within the finance and healthcare sectors, including mental health. In her opinion, data can significantly influence decision-making and improve outcomes for individuals and organizations. This project is a group project for my DSAN 5000 Data Science and Analytics course at Georgetown University.
 
 **Contact Info: ys1079@georgetown.edu**

@@ -26,11 +26,51 @@ The objective of this project is to identify and analyze the key drivers of YouT
 We classified popular videos with more than 6 million views and found that their views are concentrated in shorter durations (typically under 10 minutes). In contrast, less popular videos tend to vary widely in length.
 
 ### Video Topics Are Highly Overlapped
-
 Videos on trending topics in the entertainment and gaming categories tend to have higher engagement rates. This is a key finding derived from our clustering analysis.
 
-### Converting Audiences to Subscribers
+### Insights from Unsupervised Learning Report  
+Objective: Identifying patterns and structures in YouTube video data using clustering and dimensionality reduction.  
 
+#### 1. Dimensionality Reduction Findings  
+- PCA (Principal Component Analysis) was used to reduce data dimensionality but struggled with non-linear relationships.  
+- t-SNE (t-Distributed Stochastic Neighbor Embedding) performed better in capturing complex structures, revealing clearer video clusters than PCA.  
+- Best Perplexity for t-SNE: 50, leading to the best visualization of clustered data.  
+- Best Number of PCA Components: 47, capturing ~10% variance, indicating high data complexity.  
+
+#### 2. Clustering Insights  
+- K-Means clustering revealed two optimal clusters, grouping videos based on engagement levels.  
+- DBSCAN identified outlier videos, potentially viral content.  
+- Agglomerative Clustering provided more granular subcategories, differentiating niche and trending videos.  
+- BIRCH Clustering handled the large dataset efficiently, highlighting groups of videos based on shared attributes.  
+
+#### Key Takeaways for the Project:  
+- Video engagement and viewership trends can be categorized into distinct clusters.  
+- Nonlinear relationships exist, suggesting that traditional dimensionality reduction (PCA) is insufficient.  
+- Clustering models can identify viral content and niche categories, which may help content creators tailor strategies.  
+
+### Insights from Supervised Learning Report  
+Objective: Predicting YouTube video popularity and view counts using regression and classification models.  
+
+#### 1. Regression Analysis  
+- Random Forest, Gradient Boosting, and Ridge Regression were used to predict view counts.  
+- Gradient Boosting performed well with:  
+  - RMSE: 0.249  
+  - R²: 0.771  
+- Random Forest had better overall predictive power, capturing nonlinear interactions.  
+- Feature Importance:  
+  - Like count, duration, and topic category were the most influential predictors.  
+
+#### 2. Binary & Multi-Class Classification  
+- Videos were classified as high or low popularity (binary), and further categorized into high, medium, and low popularity (multi-class).  
+- Best Model: Gradient Boosting Classifier  
+  - Binary Classification Metrics:  
+    - Accuracy: 95.1%  
+    - F1 Score: 97.2%  
+  - Multi-Class Classification Metrics:  
+    - Accuracy: 85.3%  
+    - Macro F1 Score: 84.2%  
+
+### Converting Audiences to Subscribers
 ![Video View Like Comment Count Correlation](./pictures/view_like_comment_corr.png)
 
 View counts, like counts are highly correlated with each other. Subscribers, who actively choose to interact with video creators, are more likely to engage in behaviors such as liking, commenting, or saving videos. This suggests that fostering active audience engagement can help convert viewers into subscribers.
@@ -43,28 +83,19 @@ The three key features influencing YouTube video popularity are likeCount, durat
 
 - **Content Creators**:
 Focus on aligning videos with trending topics, particularly in high-engagement categories like entertainment and gaming, to boost viewership. Additionally, actively encouraging likes and comments during videos can strengthen audience connections and foster long-term subscriber growth.
-
-
 - **Advertisers**:
 Target advertising efforts on high-engagement videos within popular categories to maximize visibility and ROI. Partnering with creators who consistently produce engaging content can amplify the reach and effectiveness of promotional campaigns.
 
 
 ### Recommendations
 - **Content Creators**:
-
 1. **Encourage Engagement**: Include clear and consistent call-to-actions (CTAs) within videos, encouraging viewers to like, comment, and subscribe. For example, creators can verbally remind viewers to "hit the like button if you’re enjoying this content" at strategic points in the video.
-
 2. **Engaging Intros**: Capture attention within the first 30 seconds by highlighting the video’s value and encouraging immediate engagement.
-
 3. **Incorporate Visual Prompts**: Use on-screen graphics, animations, or pop-ups during the video to subtly remind viewers to engage without interrupting the flow of content.
-
 4. **Leveraging Trends**: Videos that align with trending topics, especially in popular categories like entertainment and gaming, tend to attract higher audience engagement and view counts.
 
-
 - **Advertisers**:
-
 1. **Collaborations with Engaged Creators**: Partner with creators who actively foster audience interaction and have high like and comment rates.
-
 2. **Target High-Engagement Content**: Focus ad placements on videos that incorporate engagement-driving strategies to ensure higher visibility and effectiveness.
 
 ### Conclusion @gpt4o

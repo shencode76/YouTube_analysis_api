@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.40">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DSAN-5000: Project – report</title>
+<title>report – DSAN-5000: Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,10 +56,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-66f987b68c3d73e06ed59eea3c4f36f1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -176,6 +176,8 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#short-videos-are-winning-audiences-over-long-videos" id="toc-short-videos-are-winning-audiences-over-long-videos" class="nav-link" data-scroll-target="#short-videos-are-winning-audiences-over-long-videos">Short Videos Are Winning Audiences Over Long Videos</a></li>
   <li><a href="#video-topics-are-highly-overlapped" id="toc-video-topics-are-highly-overlapped" class="nav-link" data-scroll-target="#video-topics-are-highly-overlapped">Video Topics Are Highly Overlapped</a></li>
+  <li><a href="#insights-from-unsupervised-learning-report" id="toc-insights-from-unsupervised-learning-report" class="nav-link" data-scroll-target="#insights-from-unsupervised-learning-report">Insights from Unsupervised Learning Report</a></li>
+  <li><a href="#insights-from-supervised-learning-report" id="toc-insights-from-supervised-learning-report" class="nav-link" data-scroll-target="#insights-from-supervised-learning-report">Insights from Supervised Learning Report</a></li>
   <li><a href="#converting-audiences-to-subscribers" id="toc-converting-audiences-to-subscribers" class="nav-link" data-scroll-target="#converting-audiences-to-subscribers">Converting Audiences to Subscribers</a></li>
   <li><a href="#key-features-in-youtube-video-popularity" id="toc-key-features-in-youtube-video-popularity" class="nav-link" data-scroll-target="#key-features-in-youtube-video-popularity">Key Features in YouTube Video Popularity</a></li>
   <li><a href="#business-implications" id="toc-business-implications" class="nav-link" data-scroll-target="#business-implications">Business Implications</a></li>
@@ -187,7 +189,7 @@ div.csl-indent {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -233,6 +235,91 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="video-topics-are-highly-overlapped">Video Topics Are Highly Overlapped</h3>
 <p>Videos on trending topics in the entertainment and gaming categories tend to have higher engagement rates. This is a key finding derived from our clustering analysis.</p>
 </section>
+<section id="insights-from-unsupervised-learning-report" class="level3">
+<h3 class="anchored" data-anchor-id="insights-from-unsupervised-learning-report">Insights from Unsupervised Learning Report</h3>
+<p>Objective: Identifying patterns and structures in YouTube video data using clustering and dimensionality reduction.</p>
+<section id="dimensionality-reduction-findings" class="level4">
+<h4 class="anchored" data-anchor-id="dimensionality-reduction-findings">1. Dimensionality Reduction Findings</h4>
+<ul>
+<li>PCA (Principal Component Analysis) was used to reduce data dimensionality but struggled with non-linear relationships.<br>
+</li>
+<li>t-SNE (t-Distributed Stochastic Neighbor Embedding) performed better in capturing complex structures, revealing clearer video clusters than PCA.<br>
+</li>
+<li>Best Perplexity for t-SNE: 50, leading to the best visualization of clustered data.<br>
+</li>
+<li>Best Number of PCA Components: 47, capturing ~10% variance, indicating high data complexity.</li>
+</ul>
+</section>
+<section id="clustering-insights" class="level4">
+<h4 class="anchored" data-anchor-id="clustering-insights">2. Clustering Insights</h4>
+<ul>
+<li>K-Means clustering revealed two optimal clusters, grouping videos based on engagement levels.<br>
+</li>
+<li>DBSCAN identified outlier videos, potentially viral content.<br>
+</li>
+<li>Agglomerative Clustering provided more granular subcategories, differentiating niche and trending videos.<br>
+</li>
+<li>BIRCH Clustering handled the large dataset efficiently, highlighting groups of videos based on shared attributes.</li>
+</ul>
+</section>
+<section id="key-takeaways-for-the-project" class="level4">
+<h4 class="anchored" data-anchor-id="key-takeaways-for-the-project">Key Takeaways for the Project:</h4>
+<ul>
+<li>Video engagement and viewership trends can be categorized into distinct clusters.<br>
+</li>
+<li>Nonlinear relationships exist, suggesting that traditional dimensionality reduction (PCA) is insufficient.<br>
+</li>
+<li>Clustering models can identify viral content and niche categories, which may help content creators tailor strategies.</li>
+</ul>
+</section>
+</section>
+<section id="insights-from-supervised-learning-report" class="level3">
+<h3 class="anchored" data-anchor-id="insights-from-supervised-learning-report">Insights from Supervised Learning Report</h3>
+<p>Objective: Predicting YouTube video popularity and view counts using regression and classification models.</p>
+<section id="regression-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="regression-analysis">1. Regression Analysis</h4>
+<ul>
+<li>Random Forest, Gradient Boosting, and Ridge Regression were used to predict view counts.<br>
+</li>
+<li>Gradient Boosting performed well with:
+<ul>
+<li>RMSE: 0.249<br>
+</li>
+<li>R²: 0.771<br>
+</li>
+</ul></li>
+<li>Random Forest had better overall predictive power, capturing nonlinear interactions.<br>
+</li>
+<li>Feature Importance:
+<ul>
+<li>Like count, duration, and topic category were the most influential predictors.</li>
+</ul></li>
+</ul>
+</section>
+<section id="binary-multi-class-classification" class="level4">
+<h4 class="anchored" data-anchor-id="binary-multi-class-classification">2. Binary &amp; Multi-Class Classification</h4>
+<ul>
+<li>Videos were classified as high or low popularity (binary), and further categorized into high, medium, and low popularity (multi-class).<br>
+</li>
+<li>Best Model: Gradient Boosting Classifier
+<ul>
+<li>Binary Classification Metrics:
+<ul>
+<li>Accuracy: 95.1%<br>
+</li>
+<li>F1 Score: 97.2%<br>
+</li>
+</ul></li>
+<li>Multi-Class Classification Metrics:
+<ul>
+<li>Accuracy: 85.3%<br>
+</li>
+<li>Macro F1 Score: 84.2%</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
 <section id="converting-audiences-to-subscribers" class="level3">
 <h3 class="anchored" data-anchor-id="converting-audiences-to-subscribers">Converting Audiences to Subscribers</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -250,8 +337,8 @@ div.csl-indent {
 <section id="business-implications" class="level3">
 <h3 class="anchored" data-anchor-id="business-implications">Business Implications</h3>
 <ul>
-<li><p><strong>Content Creators</strong>: Focus on aligning videos with trending topics, particularly in high-engagement categories like entertainment and gaming, to boost viewership. Additionally, actively encouraging likes and comments during videos can strengthen audience connections and foster long-term subscriber growth.</p></li>
-<li><p><strong>Advertisers</strong>: Target advertising efforts on high-engagement videos within popular categories to maximize visibility and ROI. Partnering with creators who consistently produce engaging content can amplify the reach and effectiveness of promotional campaigns.</p></li>
+<li><strong>Content Creators</strong>: Focus on aligning videos with trending topics, particularly in high-engagement categories like entertainment and gaming, to boost viewership. Additionally, actively encouraging likes and comments during videos can strengthen audience connections and foster long-term subscriber growth.</li>
+<li><strong>Advertisers</strong>: Target advertising efforts on high-engagement videos within popular categories to maximize visibility and ROI. Partnering with creators who consistently produce engaging content can amplify the reach and effectiveness of promotional campaigns.</li>
 </ul>
 </section>
 <section id="recommendations" class="level3">
@@ -260,17 +347,17 @@ div.csl-indent {
 <li><strong>Content Creators</strong>:</li>
 </ul>
 <ol type="1">
-<li><p><strong>Encourage Engagement</strong>: Include clear and consistent call-to-actions (CTAs) within videos, encouraging viewers to like, comment, and subscribe. For example, creators can verbally remind viewers to “hit the like button if you’re enjoying this content” at strategic points in the video.</p></li>
-<li><p><strong>Engaging Intros</strong>: Capture attention within the first 30 seconds by highlighting the video’s value and encouraging immediate engagement.</p></li>
-<li><p><strong>Incorporate Visual Prompts</strong>: Use on-screen graphics, animations, or pop-ups during the video to subtly remind viewers to engage without interrupting the flow of content.</p></li>
-<li><p><strong>Leveraging Trends</strong>: Videos that align with trending topics, especially in popular categories like entertainment and gaming, tend to attract higher audience engagement and view counts.</p></li>
+<li><strong>Encourage Engagement</strong>: Include clear and consistent call-to-actions (CTAs) within videos, encouraging viewers to like, comment, and subscribe. For example, creators can verbally remind viewers to “hit the like button if you’re enjoying this content” at strategic points in the video.</li>
+<li><strong>Engaging Intros</strong>: Capture attention within the first 30 seconds by highlighting the video’s value and encouraging immediate engagement.</li>
+<li><strong>Incorporate Visual Prompts</strong>: Use on-screen graphics, animations, or pop-ups during the video to subtly remind viewers to engage without interrupting the flow of content.</li>
+<li><strong>Leveraging Trends</strong>: Videos that align with trending topics, especially in popular categories like entertainment and gaming, tend to attract higher audience engagement and view counts.</li>
 </ol>
 <ul>
 <li><strong>Advertisers</strong>:</li>
 </ul>
 <ol type="1">
-<li><p><strong>Collaborations with Engaged Creators</strong>: Partner with creators who actively foster audience interaction and have high like and comment rates.</p></li>
-<li><p><strong>Target High-Engagement Content</strong>: Focus ad placements on videos that incorporate engagement-driving strategies to ensure higher visibility and effectiveness.</p></li>
+<li><strong>Collaborations with Engaged Creators</strong>: Partner with creators who actively foster audience interaction and have high like and comment rates.</li>
+<li><strong>Target High-Engagement Content</strong>: Focus ad placements on videos that incorporate engagement-driving strategies to ensure higher visibility and effectiveness.</li>
 </ol>
 </section>
 <section id="conclusion-gpt4o" class="level3">
@@ -381,8 +468,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -493,7 +578,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
